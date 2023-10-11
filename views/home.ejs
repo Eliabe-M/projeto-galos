@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1>Bem-vindo, <%= user.email %>!</h1>
+        <h2>Galos de Briga Registrados</h2>
+        <ul>
+            <% roosters.forEach(function(rooster) { %>
+                <li>
+                    Raça: <%= rooster.breed %>, 
+                    Valor: <%= rooster.value %>, 
+                    Tamanho: <%= rooster.size %>, 
+                    Peso: <%= rooster.weight %>
+                </li>
+            <% }); %>
+        </ul>
+    </body>
+</html>
